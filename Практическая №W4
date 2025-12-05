@@ -10,12 +10,14 @@ int main() {
 
 	cout << "Введите число: ";
 	cin >> a;
-
-	while (a != 0) {
-		a = a / 10;
-		kol++;
+	if (a > 0) {
+		while (a != 0) {
+			a = a / 10;
+			kol++;
+		}
+		cout << kol;
 	}
-
-	cout << kol;
-
+	else(a <= 0); {
+		cout << "некорректное значение";
+	}
 }
